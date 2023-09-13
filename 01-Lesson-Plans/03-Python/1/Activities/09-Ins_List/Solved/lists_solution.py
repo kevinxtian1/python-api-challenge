@@ -7,7 +7,7 @@ myList.append("Matt")
 print(myList)
 
 # Returns the index of the first object with a matching value
-print(myList.index("Matt"))
+print(myList.index("Ahmed"))
 
 # Changes a specified element within an List at the given index
 myList[3] = 85
@@ -17,7 +17,8 @@ print(myList)
 print(len(myList))
 
 # Removes a specified object from an List
-myList.remove("Matt")
+myList.remove("Ahmed")
+
 print(myList)
 
 # Removes the object at the index specified
@@ -28,3 +29,4 @@ print(myList)
 # Creates a tuple, a sequence of immutable Python objects that cannot be changed
 myTuple = ('Python', 100, 'VBA', False)
 print(myTuple)
+myTuple[0]="asd"
