@@ -16,3 +16,9 @@ with open(output_path, 'w') as csvfile:
 
     # Write the second row
     csvwriter.writerow(['Caleb', 'Frost', '505-80-2901'])
+    wite_rows = [
+        ['Khaled', 'Frost', '505-80-2901'],
+        ['Jin', 'Frost', '505-80-2901'],
+        ['Karen', 'Frost', '505-80-2901']
+    ]
+    csvwriter.writerows(wite_rows)

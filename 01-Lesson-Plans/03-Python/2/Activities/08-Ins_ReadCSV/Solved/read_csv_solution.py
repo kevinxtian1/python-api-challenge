@@ -6,7 +6,7 @@ import os
 import csv
 
 csvpath = os.path.join('..', 'Resources', 'contacts.csv')
-
+print(csvpath)
 # # Method 1: Plain Reading of CSV files
 # with open(csvpath, 'r') as file_handler:
 #     lines = file_handler.read()
@@ -26,7 +26,10 @@ with open(csvpath) as csvfile:
     # Read the header row first (skip this step if there is no header)
     csv_header = next(csvreader)
     print(f"CSV Header: {csv_header}")
+    # print("CSV Header: " + str(csv_header))
 
     # Read each row of data after the header
+    # all_lists = [row for row in csvreader]
     for row in csvreader:
-        print(row)
+        print(row[1], row[0])
+    # print(all_lists)

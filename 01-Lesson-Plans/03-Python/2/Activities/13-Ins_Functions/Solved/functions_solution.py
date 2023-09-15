@@ -1,6 +1,7 @@
 # Define the function and tell it to print "Hello!" when called
 def print_hello():
     print(f"Hello!")
+    print("How are you")
 
 
 # Call the function within the application to ensure the code is run
